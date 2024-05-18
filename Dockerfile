@@ -7,7 +7,7 @@ WORKDIR /app
 # Copy package.json and package-lock.json to the /app directory
 COPY package.json package-lock.json ./
 
-# Install dependencies
+# Install all dependencies
 RUN npm install
 
 # Copy the rest of project files into this image
